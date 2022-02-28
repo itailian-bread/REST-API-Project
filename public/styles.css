@@ -19,6 +19,26 @@ body{
 
 /* Local classes */
 
+.blockSty{
+    background-color: white;
+    box-shadow: 0 2px 5px #ccc;
+    padding: 30px;
+    width: 300px;
+    height: 300px;
+    margin: 16px;
+    float:left;
+    border-radius: 2%;
+}
+
+.bodyCountri{
+    margin-left: 100px;
+}
+
+.moreInfo{
+    line-height: 10px;
+    padding-top: 20px;
+}
+
 .heading{
     padding-left: 50px;
     padding-top: 20px;
@@ -31,4 +51,5 @@ body{
     background-color: white;
     padding-top: 10px;
     padding-bottom: 10px;
+    box-shadow: 0 2px 5px #ccc;
 }
