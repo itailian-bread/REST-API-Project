@@ -22,10 +22,9 @@ body{
 .blockSty{
     background-color: white;
     box-shadow: 0 2px 5px #ccc;
-    padding: 30px;
     width: 300px;
-    height: 300px;
-    margin: 16px;
+    height: 400px;
+    margin: 20px;
     float:left;
     border-radius: 2%;
 }
@@ -35,6 +34,7 @@ body{
 }
 
 .moreInfo{
+    padding: 30px;
     line-height: 10px;
     padding-top: 20px;
 }
@@ -52,4 +52,5 @@ body{
     padding-top: 10px;
     padding-bottom: 10px;
     box-shadow: 0 2px 5px #ccc;
+    margin-bottom: 70px;
 }

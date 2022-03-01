@@ -9,9 +9,12 @@ function Blocks (){
     useEffect(function(){
         axios.get("https://restcountries.com/v2/all").then(function(res){
             const rawData = res.data;
-            setData(rawData)
+            setData(rawData);
         })
     });
+
+    
+
 
     return(
         <div className="bodyCountri">
@@ -22,6 +25,7 @@ function Blocks (){
                         population={element.population} 
                         region={element.region} 
                         capital={element.capital}
+                        flag={element.flag}
                         
                     />
                     )
