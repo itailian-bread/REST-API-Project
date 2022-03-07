@@ -54,3 +54,10 @@ body{
     box-shadow: 0 2px 5px #ccc;
     margin-bottom: 70px;
 }
+
+
+/* Specified Block Styles */
+
+.specBlock{
+    display: inline;
+}
