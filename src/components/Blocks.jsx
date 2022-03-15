@@ -6,7 +6,7 @@ import SpecifiedBlock from "./SpecifiedBlock"
 
 function Blocks (){
     const [data , setData] = useState([])
-    const [country, setCountry] = useState("home")
+    const [country, setCountry] = useState("")
 
     useEffect(function(){
         axios.get("https://restcountries.com/v2/all").then(function(res){
@@ -17,6 +17,7 @@ function Blocks (){
 
     function eventHandle(event){
         setCountry(event.target.innerText)
+        console.log(country)
     }
 
     
@@ -24,7 +25,7 @@ function Blocks (){
 
     return(
         <div className="bodyCountri">
-            {country === "home" ? data.map(function(element){
+            {country === "" ? data.map(function(element,index){
                 return (
                     <Block 
                         countryName={element.name} 
@@ -33,10 +34,11 @@ function Blocks (){
                         capital={element.capital}
                         flag={element.flag}
                         handleClick={eventHandle}
+                        key={index}
                         
                     />
                     )
-            })  : <SpecifiedBlock requestedCountry={country} />}
+            })  : <SpecifiedBlock updateState={setCountry} requestedCountry={country} />}
         </div>
     )
 }
